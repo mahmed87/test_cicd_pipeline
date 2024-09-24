@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git credentialsId: 'ec643147-1277-4126-8006-e9bb241b8db4', branch: 'main', url: 'https://github.com/mahmed87/test-cicd-pipeline.git'
+                git credentialsId: 'ec643147-1277-4126-8006-e9bb241b8db4', branch: 'main', url: 'https://github.com/mahmed87/test_cicd_pipeline/blob/main/Jenkinsfile'
             }
         }
 
