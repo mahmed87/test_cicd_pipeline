@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/mahmed87/test-cicd-pipeline.git'
+                git credentialsId: 'github-pat-id', branch: 'main', url: 'https://github.com/mahmed87/test-cicd-pipeline.git'
             }
         }
 
